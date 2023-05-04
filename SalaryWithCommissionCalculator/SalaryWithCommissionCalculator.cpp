@@ -2,12 +2,20 @@
 //
 
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
 int main()
 {
-	
+	double baseSalary = 3600;
+	double commissionRate = 0.05; // 5% commission
+	double salesQuota = 17000;
+	double totalSales = 23800;
+	double commissionPay = 0;
+	if (totalSales > salesQuota) {
+		commissionPay = totalSales - salesQuota;
+	}
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
