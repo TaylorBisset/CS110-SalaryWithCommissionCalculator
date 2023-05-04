@@ -9,13 +9,17 @@ using namespace std;
 int main()
 {
 	double baseSalary = 3600;
-	double commissionRate = 0.05; // 5% commission
+	double commissionRate = 0.05;	// 5% commission
 	double salesQuota = 17000;
 	double totalSales = 23800;
 	double commissionPay = 0;
 	if (totalSales > salesQuota) {
 		commissionPay = totalSales - salesQuota;
 	}
+	double grossPay = baseSalary + commissionPay;
+	double FICA = grossPay * 0.0765;			// FICA witholding = 7.65% of Gross Pay
+	double incomeTax = grossPay * 0.25;		// Federal income tax = 25% of Gross Pay
+	double netPay = (grossPay - FICA - incomeTax);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
