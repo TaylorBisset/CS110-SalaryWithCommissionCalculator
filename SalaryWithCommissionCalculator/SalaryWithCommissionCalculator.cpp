@@ -25,7 +25,8 @@ int main()
 	cout << "Please enter your Sales Quota: $";
 	cin >> salesQuota;
 	
-	cout << "Please enter your Commission Rate: ";
+	cout << "Please enter your Commission Rate\n"
+		"(example, 5% = 0.05): ";
 	cin >> commissionRate;
 
 	/*
